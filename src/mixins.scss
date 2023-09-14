@@ -1,0 +1,7 @@
+@mixin col-x-size {
+    @for $i from 2 through 20 {
+        .cell.size-#{$i} {--size: #{$i}; }
+    }
+  }
+  
+  @include col-x-size;

@@ -1,0 +1,10 @@
+{
+  "recommendations": ["svelte.svelte-vscode"],
+  "editor.formatOnSave": true,
+  "[javascript][html][typescript]": {
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[svelte]":{
+	"editor.defaultFormatter":"JamesBirtles.svelte-vscode"
+  }
+}
