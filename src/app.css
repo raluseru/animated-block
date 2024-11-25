@@ -3,7 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
@@ -58,86 +58,78 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-@media (prefers-color-scheme: dark) {
-    :root {
-      --color: #fff;
-      --background-color: #1a1a1a;
-      --pink: #EF959C;
-      --pear: #C2E812;
-      --blue: #56B3B4;
-      --violet: #632A50;
-      --gray: #8DA1B9;
-      --unit: 10px;
-      --container-width: 650px;
-    }
 
-    a:hover {
-      color: var(--violet);
-    }
-  
-    body {
-      background: var(--background-color);
-      margin: 0;
-      padding-top: 25px;
-      padding-left: 25px;
-    }  
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color: #fff;
+    --background-color: #1a1a1a;
+    --pink: #EF959C;
+    --pear: #C2E812;
+    --blue: #56B3B4;
+    --violet: #632A50;
+    --gray: #8DA1B9;
+    --unit: 10px;
+    --container-width: 650px;
   }
+
+  a:hover {
+    color: var(--violet);
+  }
+
+  body {
+    background: var(--background-color);
+    margin: 0;
+    padding-top: 25px;
+    padding-left: 25px;
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --color: #213547;
     --background-color: #ffffff;
-	--pink: #EF959C;
-	--pear: #C2E812;
-	--blue: #56B3B4;
-	--violet: #632A50;
-	--gray: #8DA1B9;
-	--unit: 10px;
-	--container-width: 650px;
+    --pink: #EF959C;
+    --pear: #C2E812;
+    --blue: #56B3B4;
+    --violet: #632A50;
+    --gray: #8DA1B9;
+    --unit: 10px;
+    --container-width: 650px;
   }
 
   body {
-	background: var(--background-color);
+    background: var(--background-color);
   }
 
   .container {
-	position: relative;
-	width: var(--container-width);
-	display: flex;
-	flex-direction: column;
-	gap: var(--unit);
-	overflow: hidden;
+    position: relative;
+    width: var(--container-width);
+    display: flex;
+    flex-direction: column;
+    gap: var(--unit);
+    overflow: hidden;
     align-items: center;
   }
 
-  .row {
-	height: var(--unit);
-	display: flex;
-	/* justify-content: center; */
-	gap: var(--unit);
-	translate: var(--offset);
-  }
-
-  .cell {
-	height: 100%;
-	width: calc(var(--size, 2) * var(--unit));
-	background-color: var(--gray);
-	border-radius: 1000px;
-  }
 
   .pink {
-	background-color: var(--pink);
+    background-color: var(--pink);
   }
+
   .pear {
-	background-color: var(--pear);
+    background-color: var(--pear);
   }
+
   .blue {
-	background-color: var(--blue);
+    background-color: var(--blue);
   }
+
   .violet {
-	background-color: var(--violet);
+    background-color: var(--violet);
   }
+
   .gray {
-	background-color: var(--gray);
+    background-color: var(--gray);
   }
 
 }

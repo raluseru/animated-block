@@ -1,4 +1,5 @@
 <script lang="ts">
-  import Block from './lib/Block.svelte'
+  import Block from "./lib/Block.svelte";
 </script>
+
 <Block />
